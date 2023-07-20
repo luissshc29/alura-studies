@@ -1,0 +1,26 @@
+.AppStyle {
+    display: grid;
+    grid-template-rows: min-content min-content auto;
+    grid-template-areas: 
+    "nova-tarefa"
+    "cronometro"
+    "tarefas"
+    ;
+    row-gap: 24px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 3em;
+    background-color: #171717;
+  
+    @media screen and (min-width:1280px)  {
+      grid-template-areas: 
+      "nova-tarefa tarefas"
+      "cronometro tarefas"
+      ;
+      column-gap: 64px;
+      grid-template-rows: min-content min-content;
+      grid-template-columns: 750px 300px;
+      justify-content: center;
+      align-content: center;
+    }
+  }
